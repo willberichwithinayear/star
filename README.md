@@ -1,7 +1,5 @@
 # Robin and Hojun's web application project
-With the aim to connect regular people with influencers and celebrities through a service enabling users to request personalized voice message from other users. 
-
-
+With the aim to connect regular people with influencers and celebrities through a service enabling users to request personalized voice messages from other users. The concept is monetized through a response-or-refund principle. 
 
 ## Robin's To-do list:
 - Set up version control system on collaborative github-repository.
