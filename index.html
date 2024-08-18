@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initial page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>My Simple Vue.js Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <script src="https://unpkg.com/vue@3"></script> <!-- Include Vue.js -->
 </head>
 <body>
-    <h1>Title</h1>
+    <div id="app">
+        <header>
+            <h1>{{ title }}</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" @click.prevent="currentPage = 'home'">Home</a></li>
+                    <li><a href="#" @click.prevent="currentPage = 'about'">About</a></li>
+                    <li><a href="#" @click.prevent="currentPage = 'contact'">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <footer>
+            <p>&copy; 2024 My Simple Vue.js Website</p>
+        </footer>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    title: 'My Simple Vue.js Website',
+                    currentPage: 'home'
+                }
+            }
+        })
+
+        app.mount('#app')
+    </script>
 </body>
 </html>
