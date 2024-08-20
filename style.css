@@ -41,6 +41,7 @@ header {
 }
 
 .segmented-control {
+    padding: 0.125rem;
     display: flex;
     background-color: rgba(120, 120, 128, 0.12);
     border-radius: 9px;
@@ -93,7 +94,6 @@ main {
     padding: 8px 16px;
     margin-bottom: 8px;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image-parent {
@@ -135,7 +135,7 @@ main {
     height: 19px;
 }
 
-.rectangle1 {
+.rectangle {
     position: absolute;
     top: 0;
     right: 0;
@@ -167,6 +167,9 @@ footer {
     background-color: #fff;
     border-top: 0.3px solid #a6a6aa;
     padding: 1.0625rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-nav {
